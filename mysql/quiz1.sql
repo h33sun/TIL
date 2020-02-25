@@ -9,6 +9,7 @@ SELECT DISTINCT Continent FROM country;
 #--------------------------------------------------------------------------
 #[QUIZ1] - Q2. 한국 도시중에 POP 100만이 넘는 도시를 조회하여 인구순으로 내림차순 하시오.
 SELECT * FROM city LIMIT 5;
+
 SELECT NAME, population FROM city
 WHERE countrycode = 'KOR' AND POPULATION >= 100*10000
 ORDER BY POPULATION DESC;
